@@ -1,6 +1,10 @@
 SLEEP_MODIFIER = 0
 LOOP_BREAK_SECONDS = 20
 
+#Whether to use EN assets or not
+EN_FLAG = True
+
+
 MIN_JST_OFFSET = -20
 MAX_JST_OFFSET = 20
 MIN_PORT = 0

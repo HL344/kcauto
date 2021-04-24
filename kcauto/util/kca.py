@@ -11,7 +11,7 @@ import config.config_core as cfg
 import ships.ships_core as shp
 import util.click_tracker as clt
 from constants import (
-    GAME_W, GAME_H, VISUAL_URL, API_URL, EXACT, DEFAULT, SLEEP_MODIFIER)
+    GAME_W, GAME_H, VISUAL_URL, API_URL, EXACT, DEFAULT, SLEEP_MODIFIER,EN_FLAG)
 from kca_enums.interaction_modes import InteractionModeEnum
 from kca_enums.kcsapi_paths import KCSAPIEnum
 from util.exceptions import ChromeCrashException
@@ -22,11 +22,13 @@ class Kca(object):
     """Primary kcauto utility class.
     """
     ASSETS_FOLDER = 'assets'
+    ASSETS_FOLDER_EN = 'assets_en'
     visual_hook = None
     api_hook = None
     game_x = None
     game_y = None
     last_ui = None
+    en_flag = False
     r = {}
 
     def __init__(self):
@@ -303,7 +305,12 @@ class Kca(object):
             str: OS-safe path to an asset.
         """
         asset_split = asset.split('|')
-        return os.path.join(self.ASSETS_FOLDER, *asset_split)
+        folder = self.ASSETS_FOLDER_EN
+        path = os.path.join(folder, *asset_split)
+        if EN_FLAG & os.path.isfile(path):
+            return path
+        else:
+            return os.path.join(self.ASSETS_FOLDER, *asset_split)
 
     def _get_region(self, region):
         """Helper method that returns a Region based on the region passed in.
