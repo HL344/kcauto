@@ -1,8 +1,10 @@
-# kcauto
+# kcauto english patch fork
 
 **kcauto** is a robust Kantai Collection automation tool. kcauto and it's predecessor [kancolle-auto](https://github.com/mrmin123/kancolle-auto) are proof-of-concepts in using vision-based automation to play Kantai Collection. They are exercises in automating large, convoluted, and complex game-playing logic. kcauto is written in Python 3.7.
 
 kcauto is not designed to be the fastest automation tool, but is instead meant to be robust, highly customizable, and relatively safe to use. Please read the Disclaimer below before use!
+
+This fork is intended to be used with [KanColle-English-Patch-KCCP](https://github.com/InochiPM/KanColle-English-Patch-KCCP).
 
 ---
 
