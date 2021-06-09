@@ -68,8 +68,7 @@ class LBASCore(object):
                     continue
 
                 if group_id != 1:
-                    kca_u.kca.click_existing(
-                        'upper_right', f'combat|lbas_group_tab_{group_id}.png')
+                    kca_u.kca.click_existing('upper_right', f'combat|lbas_group_tab_{group_id}.png')
                     kca_u.kca.sleep(1)
                 if group_id in resupply_groups:
                     self._resupply(group_id)
@@ -77,7 +76,7 @@ class LBASCore(object):
                     self._set_to_desired_state(
                         group_instance.state,
                         group_instance.desired_group_state)
-            kca_u.kca.sleep(0.5)
+                kca_u.kca.sleep(0.5)
             kca_u.kca.click_existing('lower_left', 'combat|c_world_1.png')
             kca_u.kca.sleep(1)
 
@@ -150,15 +149,13 @@ class LBASCore(object):
         #     self._lbas_panel_resupply_cond, self._lbas_panel_resupply_func,
         #     timeout=10)
         api_result = {}
+        kca_u.kca.click_existing('upper_right', 'combat|lbas_resupply.png')
         while KCSAPIEnum.LBAS_RESUPPLY_ACTION.name not in api_result:
-            kca_u.kca.click_existing(
-                'upper_right', 'combat|lbas_resupply.png')
             api_result = api.api.update_from_api(
                 {KCSAPIEnum.LBAS_RESUPPLY_ACTION}, need_all=False, timeout=1)
             kca_u.kca.sleep()
 
-        kca_u.kca.wait_vanish(
-            'lower_right', 'combat|lbas_resupply_in_progress.png')
+        kca_u.kca.wait_vanish('lower_right', 'combat|lbas_resupply_in_progress.png')
         kca_u.kca.sleep(1)
 
     def _set_to_desired_state(self, start, stop):
