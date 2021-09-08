@@ -5,16 +5,17 @@
   "general.paused": false,
   "expedition.enabled": true,
   "expedition.fleet_2": [
-    2
+    6
   ],
   "expedition.fleet_3": [
-    21
+    5
   ],
   "expedition.fleet_4": [
+    37,
     38
   ],
   "pvp.enabled": true,
-  "pvp.fleet_preset": null,
+  "pvp.fleet_preset": 1,
   "combat.enabled": false,
   "combat.sortie_map": "1-1",
   "combat.fleet_mode": "standard",
@@ -48,30 +49,34 @@
   "event_reset.reset_difficulty": 3,
   "event_reset.farm_difficulty": 2,
   "ship_switcher.enabled": false,
-  "ship_switcher.slots": {},
-  "passive_repair.enabled": false,
+  "ship_switcher.slots": {
+    "1": "morale:>:70|class:2:>=:30:<=:1:<:49:locked:",
+    "2": "morale:>:75|class:2:>=:30:<=:1:<=:49:locked:"
+  },
+  "passive_repair.enabled": true,
   "passive_repair.repair_threshold": 1,
   "passive_repair.slots_to_reserve": 1,
-  "quest.enabled": false,
+  "quest.enabled": true,
   "quest.quests": [
-    "Bd1",
-    "Bd2",
-    "Bd3",
-    "Bd4",
-    "Bd5",
-    "Bd6",
-    "Bd7",
-    "Bd8",
-    "Bw1",
-    "Bw2",
-    "Bw3",
-    "Bw4",
+    "C2",
+    "C3",
+    "C4",
+    "C8",
+    "C16",
+    "C29",
     "D2",
     "D3",
     "D4",
+    "D9",
+    "D11",
+    "D22",
     "E3",
     "E4"
   ],
-  "scheduler.enabled": false,
-  "scheduler.rules": []
+  "scheduler.enabled": true,
+  "scheduler.rules": [
+    "time:1130:sleep:kcauto:0130",
+    "time_run:0300:sleep:kcauto:0020",
+    "time_run:0130:sleep:kcauto:0015"
+  ]
 }
