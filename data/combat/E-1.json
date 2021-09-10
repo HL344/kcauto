@@ -4,87 +4,87 @@
     "enemy_context": ["subs"],
     "nodes": {
         "Start 1": {
-            "coodrs": [1089, 481]
+            "coords": [1089, 481]
         },
         "A": {
-            "coodrs": [992, 420]
+            "coords": [992, 420]
         },
         "B": {
-            "coodrs": [952, 346]
+            "coords": [952, 346]
         },
         "C": {
-            "coodrs": [923, 292]
+            "coords": [923, 292]
         },
         "C1": {
-            "coodrs": [1002, 274]
+            "coords": [1002, 274]
         },
         "C2": {
-            "coodrs": [965, 212]
+            "coords": [965, 212]
         },
         "D": {
-            "coodrs": [866, 202],
+            "coords": [866, 202],
 			"types": ["air"]
         },
         "E": {
-            "coodrs": [817, 251]
+            "coords": [817, 251]
         },
         "F": {
-            "coodrs": [769, 196]
+            "coords": [769, 196]
         },
         "G": {
-            "coodrs": [758, 307],
+            "coords": [758, 307],
 			"types": ["boss"]
         },
         "H": {
-            "coodrs": [684, 398]
+            "coords": [684, 398]
         },
         "I": {
-            "coodrs": [624, 334]
+            "coords": [624, 334]
         },
         "J": {
-            "coodrs": [534, 318],
+            "coords": [534, 318],
 			"types": ["sub"]
         },
         "K": {
-            "coodrs": [523, 481],
+            "coords": [523, 481],
 			"types": ["air"]
         },
         "L": {
-            "coodrs": [487, 211]
+            "coords": [487, 211]
         },
         "M": {
-            "coodrs": [460, 361]
+            "coords": [460, 361]
         },
         "N": {
-            "coodrs": [444, 424]
+            "coords": [444, 424]
         },
         "O": {
-            "coodrs": [411, 297],
+            "coords": [411, 297],
 			"types": ["boss"]
         },
         "P": {
-            "coodrs": [385, 192]
+            "coords": [385, 192]
         },
         "Q": {
-            "coodrs": [376, 379]
+            "coords": [376, 379]
         },
         "R": {
-            "coodrs": [341, 472]
+            "coords": [341, 472]
         },
         "Start 2": {
-            "coodrs": [849, 368]
+            "coords": [849, 368]
         },
         "S": {
-            "coodrs": [307, 363]
+            "coords": [307, 363]
         },
         "T": {
-            "coodrs": [249, 370]
+            "coords": [249, 370]
         },
         "U": {
-            "coodrs": [168, 361]
+            "coords": [168, 361]
         },
         "V": {
-            "coodrs": [218, 273],
+            "coords": [218, 273],
 			"types": ["boss"]
         }
 
