@@ -8,42 +8,46 @@
     6
   ],
   "expedition.fleet_3": [
-    5
+    2
   ],
   "expedition.fleet_4": [
-    37,
-    38
+    11
   ],
-  "pvp.enabled": true,
+  "pvp.enabled": false,
   "pvp.fleet_preset": 1,
   "combat.enabled": false,
-  "combat.sortie_map": "1-1",
+  "combat.sortie_map": "E-1",
   "combat.fleet_mode": "standard",
   "combat.fleet_presets": [],
   "combat.node_selects": [],
   "combat.retreat_points": [],
   "combat.push_nodes": [],
   "combat.node_formations": [
-    "1:diamond",
-    "B:double_line",
-    "C:double_line"
+    "C:vanguard",
+    "E:vanguard",
+    "G:line_ahead"
   ],
   "combat.node_night_battles": [
-    "1:True"
+    "T:True"
   ],
   "combat.retreat_limit": 4,
   "combat.repair_limit": 3,
   "combat.repair_timelimit_hours": 1,
   "combat.repair_timelimit_minutes": 0,
-  "combat.lbas_groups": [],
-  "combat.lbas_group_1_nodes": [],
+  "combat.lbas_groups": [
+    1
+  ],
+  "combat.lbas_group_1_nodes": [
+    "G",
+    "G"
+  ],
   "combat.lbas_group_2_nodes": [],
   "combat.lbas_group_3_nodes": [],
-  "combat.check_fatigue": false,
-  "combat.check_lbas_fatigue": false,
-  "combat.reserve_repair_dock": false,
-  "combat.port_check": false,
-  "combat.clear_stop": false,
+  "combat.check_fatigue": true,
+  "combat.check_lbas_fatigue": true,
+  "combat.reserve_repair_dock": true,
+  "combat.port_check": true,
+  "combat.clear_stop": true,
   "event_reset.enabled": false,
   "event_reset.frequency": 3,
   "event_reset.reset_difficulty": 3,
