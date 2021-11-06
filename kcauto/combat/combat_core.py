@@ -228,7 +228,7 @@ class CombatCore(CoreBase):
             while cur_page < self.map_data.page:
                 kca_u.kca.r['top'].hover()
                 kca_u.kca.sleep(0.5)
-                kca_u.kca.click_existing(
+                kca_u.kca.wait_and_click(
                     'kc', f'combat|_event_next_page_{cur_page}.png')
                 cur_page += 1
         kca_u.kca.r['top'].hover()
@@ -237,8 +237,7 @@ class CombatCore(CoreBase):
         if erst.reset.need_to_reset:
             erst.reset.reset_event_difficulty()
         else:
-            while not kca_u.kca.exists(
-                    'lower_right', 'global|sortie_select.png'):
+            while not kca_u.kca.exists('lower_right', 'global|sortie_select.png'):
                 kca_u.kca.sleep(1)
                 kca_u.kca.r['center'].click()
                 kca_u.kca.sleep(1)
@@ -371,8 +370,7 @@ class CombatCore(CoreBase):
         while True:
             if kca_u.kca.exists('kc', 'combat|compass.png'):
                 Log.log_msg("Spinning compass.")
-                kca_u.kca.click_existing(
-                    'kc', 'combat|compass.png', cached=True)
+                kca_u.kca.click_existing('kc', 'combat|compass.png', cached=True)
                 kca_u.kca.r['top'].hover()
             elif (
                     kca_u.kca.exists(
@@ -404,6 +402,8 @@ class CombatCore(CoreBase):
                 # resource node end
                 return False
             else:
+                Log.log_debug(self.current_node)
+                Log.log_debug(self.current_node.selection_node)
                 Log.log_debug("Wait for combat API.")
                 api_result = api.api.update_from_api(
                     self.COMBAT_APIS, need_all=False, timeout=1)

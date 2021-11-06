@@ -54,7 +54,7 @@ class LBASCore(object):
     def manage_lbas(self):
         if not self.enabled:
             return False
-
+        kca_u.kca.sleep()
         resupply_groups = self._groups_to_resupply
         switch_state_groups = self._groups_to_switch_state
         rest_groups = self._groups_to_rest
