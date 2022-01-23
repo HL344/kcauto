@@ -14,6 +14,7 @@ class Quest(object):
         self.name = name
         self.quest_id = data['id']
         self.quest_type = data['type']
+        #intervals(sorties,exercises,expeditions)
         self.intervals = tuple(data.get('intervals', (0, 0, 0)))
         self.enemy_context = tuple(data.get('enemy_context', ()))
         map_context = data.get('map_context', ())
