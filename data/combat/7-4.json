@@ -23,7 +23,8 @@
 			"types": ["air"]
 		},
 		"F": {
-			"coords": [547, 367]
+			"coords": [547, 367],
+			"types": ["select"]
 		},
 		"G": {
 			"coords": [662, 245],
